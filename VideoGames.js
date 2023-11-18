@@ -14,10 +14,14 @@ class VideoGame extends Media{
     }
 }
 
-let someVideoGame = new VideoGame("Runescape", "PC");
-// console.log(someVideoGame.name);
-// console.log(`Platform is: ${someVideoGame.platform} ` + `Number of players: ${someVideoGame.players}`)
-console.log(someVideoGame.getVideoGame());
-// console.log(someVideoGame.getMediaName());
-// console.log(someVideoGame.version());
-console.log(Media.count);
+// let someVideoGame = new VideoGame("Runescape", "PC");
+// // console.log(someVideoGame.name);
+// // console.log(`Platform is: ${someVideoGame.platform} ` + `Number of players: ${someVideoGame.players}`)
+// console.log(someVideoGame.getVideoGame());
+// // console.log(someVideoGame.getMediaName());
+// // console.log(someVideoGame.version());
+// console.log(Media.count);
+
+module.exports = {
+    VideoGame
+}
