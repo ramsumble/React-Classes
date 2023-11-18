@@ -1,7 +1,7 @@
 // bluepring  of data
 class Media {
-    constructor(){
-        this.name = "Default generic media";
+    constructor(mediName){
+        this.name = mediName;
 
         Media.count++;
     }
@@ -28,16 +28,19 @@ class Media {
 }
 
 // instances of the bluprint
-let media1 = new Media();
-media1.name = "some sort of book"
-console.log(media1.getMediaName());
-console.log(media1.version());
+// let media1 = new Media();
+// media1.name = "some sort of book"
+// console.log(media1.getMediaName());
+// console.log(media1.version());
 
-let media2 = new Media();
-console.log(media2.name);
-console.log(Media.count);
+// let media2 = new Media();
+// console.log(media2.name);
+// console.log(Media.count);
 
-console.log(Media.version());
-console.log(Media.prototype.version());
-console.log(Media.prototype.getMediaName());
+// console.log(Media.version());
+// console.log(Media.prototype.version());
+// console.log(Media.prototype.getMediaName());
 
+module.exports = {
+    Media
+}
